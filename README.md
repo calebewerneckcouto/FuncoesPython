@@ -1,86 +1,82 @@
-```markdown
-# Projeto de Funções em Python
+# Projeto de Fun????es Utilit??rias em Python
 
-Este repositório contém uma coleção de scripts Python, cada um implementando uma funcionalidade específica. As funções abrangem operações matemáticas simples, validações de dados e métodos de busca em listas.
+Este reposit??rio cont??m uma cole????o de exerc??cios implementados em Python, consistindo em fun????es ??teis e pr??ticas para realizar tarefas como encontrar o maior n??mero em uma lista, calcular o fatorial de um n??mero, verificar a maioridade e determinar se um n??mero ?? primo.
 
 ## Estrutura do Projeto
 
-O projeto está organizado da seguinte forma:
+O projeto est?? organizado da seguinte forma:
 
-- `exercicio2.py`: Encontra o maior número em uma lista e sua posição.
-- `exercicio3.py`: Verifica se uma pessoa é maior de idade.
-- `exercicio4.py`: Verifica maior de idade considerando entradas em diferentes formatos.
-- `exercicio5.py`: Busca de um elemento em uma lista sem usar o operador `in`.
-- `exercicio6.py`: Calcula o fatorial de um número inteiro não-negativo.
-- `exercicio.py`: Avalia se um número é primo.
+- `exercicio.py`: Cont??m uma fun????o que verifica se um n??mero ?? primo.
+- `exercicio2.py`: Implementa uma fun????o que retorna a posi????o e o valor do maior n??mero em uma lista.
+- `exercicio3.py`: Define uma fun????o que verifica se uma pessoa ?? maior de idade usando tuplas.
+- `exercicio4.py`: Implementa uma fun????o que verifica a maioridade usando tanto tuplas quanto dicion??rios.
+- `exercicio5.py`: Cont??m uma fun????o para verificar a presen??a de um elemento em uma lista.
+- `exercicio6.py`: Fornece uma fun????o que calcula o fatorial de um n??mero de forma recursiva.
 
-## Linguagens de Programação Usadas
+## Tecnologias Utilizadas
 
-- **Python**: Versão 3.x
+- **Linguagem de Programa????o**: Python 3
 
-## Dependências e Instruções de Instalação
+## Depend??ncias
 
-Este projeto não requer nenhuma dependência externa além do Python 3.x. Para instalar o Python, siga as instruções de instalação disponíveis em [python.org](https://www.python.org/downloads/).
+Este projeto n??o requer depend??ncias externas, apenas o Python 3 instalado na sua m??quina. Para instalar o Python, voc?? pode seguir as instru????es no [site oficial do Python](https://www.python.org/downloads/).
 
-## Como Rodar o Projeto e Executar Testes
+## Como Executar o Projeto
 
-Para executar qualquer script, utilize o comando abaixo no terminal:
+Cada arquivo Python pode ser executado de forma independente atrav??s da linha de comando. Por exemplo, para executar o arquivo `exercicio2.py`, voc?? pode usar:
 
 ```bash
-python <nome_do_arquivo>.py
+python3 exercicio2.py
 ```
 
-## Detalhamento dos Arquivos de Código
+### Como Executar Testes
 
-### `exercicio2.py`
+Cada script cont??m exemplos de uso ou testes no final do arquivo. Para rodar os testes, execute o script desejado no terminal. Isso mostrar?? os resultados dos testes direto no console.
 
-#### Funções:
-
-- `maior_numero(lista)`: Identifica o maior número em uma lista e sua posição. Retorna uma tupla `(posição, número)` ou `None` para listas vazias.
-
-### `exercicio3.py`
-
-#### Funções:
-
-- `maior_idade(pessoa)`: Verifica se uma pessoa (dada como uma tupla nome-idade) é maior de idade.
-
-### `exercicio4.py`
-
-#### Funções:
-
-- `maior_idade(pessoa)`: Avalia a maioridade com base em dados de entrada que podem ser tuplas ou dicionários.
-
-### `exercicio5.py`
-
-#### Funções:
-
-- `elemento_na_lista(lista, elemento)`: Verifica a existência de um elemento em uma lista sem usar o operador `in`.
-
-### `exercicio6.py`
-
-#### Funções:
-
-- `fatorial(n)`: Calcula o fatorial de um número inteiro `n`. Retorna `1` para `0` ou `1` e utiliza recursão para outros valores.
+## Detalhamento dos Arquivos de C??digo
 
 ### `exercicio.py`
 
-#### Funções:
+- **Fun????o `primo(n)`**: Verifica se um n??mero ?? primo. Espera-se que o usu??rio insira um n??mero e a fun????o determinar?? se ?? primo ou n??o, imprimindo o resultado na sa??da padr??o.
 
-- `primo(n)`: Determina se um número `n` é primo. Imprime diretamente no console.
+### `exercicio2.py`
+
+- **Fun????o `maior_numero(lista)`**: Retorna a posi????o e o valor do maior n??mero em uma lista fornecida. Se a lista estiver vazia, retorna `None`.
+
+### `exercicio3.py`
+
+- **Fun????o `maior_idade(pessoa)`**: Avalia se uma pessoa (representada por uma tupla contendo nome e idade) ?? maior de idade. Imprime uma mensagem indicando a maioridade.
+
+### `exercicio4.py`
+
+- **Fun????o `maior_idade(pessoa)`**: Similar ?? fun????o em `exercicio3.py` mas aceita tanto tuplas quanto dicion??rios para representar a pessoa.
+
+### `exercicio5.py`
+
+- **Fun????o `elemento_na_lista(lista, elemento)`**: Verifica a presen??a de um elemento em uma lista dada. Retorna `True` se o elemento estiver presente, caso contr??rio `False`.
+
+### `exercicio6.py`
+
+- **Fun????o `fatorial(n)`**: Calcula o fatorial de um n??mero usando a t??cnica de recursividade. Se o n??mero fornecido for negativo, gera um `ValueError`.
 
 ## Exemplos de Uso
 
-Cada arquivo contém exemplos de uso como parte de seu código, demonstrando as chamadas às funções implementadas.
+Voc?? pode testar cada script individualmente executando-os no terminal. Por exemplo, para verificar a funcionalidade do fatorial:
 
-## Boas Práticas e Dicas para Contribuir
-
-1. **Leia o código existente**: Familiarize-se com o projeto e seu estilo de codificação.
-2. **Documente suas mudanças**: Sempre comente seu código quando adicionar ou alterar funcionalidades.
-3. **Use nomes explicativos**: Variáveis e funções devem ter nomes que refletem seu propósito.
-4. **Escreva testes**: Adicione testes para novas funcionalidades para garantir estabilidade.
-5. **Revisão de código**: Solicite revisões de código para garantir qualidade e colaboração.
-
-## Licença
-
-Este projeto é distribuído sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+```bash
+python3 exercicio6.py
 ```
+
+E siga as instru????es fornecidas pelo script, se houver.
+
+## Como Contribuir
+
+Para contribuir com este reposit??rio, voc?? pode seguir as boas pr??ticas abaixo:
+
+1. **Use Branches**: N??o fa??a commit diretamente na branch principal. Crie uma branch para cada nova caracter??stica ou corre????o.
+2. **C??digo Limpo e Comentado**: Escreva um c??digo limpo e bem comentado para que outros desenvolvedores possam entender facilmente.
+3. **Pull Requests**: Envie pull requests com uma descri????o clara das mudan??as propostas e suas justificativas.
+4. **Revis??o de C??digo**: Solicite revis??es de c??digo para garantir qualidade e corretude.
+5. **Testes**: Adicione testes sempre que poss??vel, para garantir que as fun????es estejam operando como esperado.
+
+Contribui????es s??o sempre bem-vindas para melhorar as funcionalidades ou corrigir bugs!
