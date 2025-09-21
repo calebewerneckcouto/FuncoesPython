@@ -1,111 +1,87 @@
-# README.md
+```markdown
+# README.md - Repositório de Exercícios Python
 
-## Visão Geral do Projeto
+Este repositório contém uma coleção de exercícios implementados em Python, cada um focado em conceitos específicos de programação, como recursão, controle de fluxo, tratamento de exceções e manipulação de dados.
 
-Este repositório contém uma coleção de scripts Python projetados para demonstrar manipulações básicas de dados e lógicas de programação, incluindo busca de maior número em uma lista, cálculo de fatorial, verificação de maioridade, identificação de números primos e verificação de presença de elementos em uma lista.
+## Estrutura do Projeto e Pastas
 
-### Estrutura de Diretórios
+O projeto é organizado nas seguintes pastas:
+- `src` - Contém os scripts Python com os exercícios implementados.
+- `tests` - Contém os testes unitários para os exercícios (quando aplicável).
 
-```
-/
-|- exercicio.py
-|- exercicio2.py
-|- exercicio3.py
-|- exercicio4.py
-|- exercicio5.py
-|- exercicio6.py
-```
+Arquivos específicos:
+- `exercicio.py`: Verifica se um número é primo.
+- `exercicio2.py`: Encontra o maior número numa lista e sua posição.
+- `exercicio3.py`: Verifica se uma pessoa é maior de idade.
+- `exercicio4.py`: Flexível verificação de maioridade, aceitando diferentes estruturas de dados.
+- `exercicio5.py`: Verifica a presença de um elemento em uma lista sem usar o operador `in`.
+- `exercicio6.py`: Calcula o fatorial de um número usando recursão.
 
-### Linguagens Utilizadas
+## Linguagens de Programação Usadas
 
 - **Python**: Versão 3.8 ou superior.
 
-### Dependências
+## Dependências e Instruções de Instalação
 
-Este projeto não possui dependências externas.
+Para rodar os scripts e testes, é recomendado ter o Python 3.8 ou superior instalado. Não há dependências externas necessárias para a execução dos exercícios contidos neste repositório.
 
-## Instruções de Instalação
-
-1. Clone o repositório:
-   ```bash
-   git clone URL_DO_REPOSITORIO
-   ```
-2. Certifique-se de que o Python 3.8+ está instalado na sua máquina.
-
-## Executando os Scripts e Testes
-
-Cada script pode ser executado diretamente via linha de comando. Por exemplo, para executar o `exercicio2.py`, simplesmente use:
-
+Instalação do Python:
 ```bash
-python exercicio2.py
+sudo apt update
+sudo apt install python3.8
 ```
 
-Para executar os exemplos de uso inclusos em cada script ou qualquer teste escrito, você pode iniciar diretamente o script escolhido, visto que os exemplos de uso estão geralmente no final dos scripts como chamadas às funções implementadas.
+## Como Rodar o Projeto e Executar Testes
 
-## Detalhes dos Scripts
+Navegue até a pasta do projeto e execute os scripts Python diretamente com o comando:
+```bash
+python3 nome_do_arquivo.py
+```
 
-### exercicio.py
+Para rodar testes (quando aplicável):
+```bash
+python3 -m unittest tests/nome_do_arquivo_de_teste.py
+```
 
-- **Função**: `primo(n)`
-  - **Objetivo**: Verificar se um número inteiro positivo é primo.
-  - **Exemplo de Uso**:
-    ```python
-    primo(7) # Saída: "É primo"
-    ```
+## Explicação Detalhada dos Arquivos de Código
 
-### exercicio2.py
+### `exercicio.py`
+- **Função `primo(n)`**: Verifica se o número `n` é primo, imprimindo o resultado diretamente.
 
-- **Função**: `maior_numero(lista)`
-  - **Objetivo**: Encontrar o maior número numa lista de inteiros e retornar sua posição e valor.
-  - **Exemplo de Uso**:
-    ```python
-    maior_numero([10, 20, 30, 25]) # Saída: (2, 30)
-    ```
+### `exercicio2.py`
+- **Função `maior_numero(lista)`**: Encontra o maior número em uma lista e retorna sua posição e valor.
 
-### exercicio3.py e exercicio4.py
+### `exercicio3.py` e `exercicio4.py`
+- Ambos verificam a maioridade de uma pessoa, mas `exercicio4.py` aceita tanto tuplas quanto dicionários como entrada.
 
-- **Função**: `maior_idade(pessoa)`
-  - **Objetivo**: Verificar se uma pessoa é maior de idade (18 anos ou mais) baseado em uma entrada de tupla ou dicionário.
-  - **Exemplo de Uso**:
-    ```python
-    maior_idade(("Calebe", 36)) # Saída: "Calebe é maior de idade."
-    maior_idade({"nome": "Julia", "idade": 15}) # Saída: "Julia não é maior de idade."
-    ```
+### `exercicio5.py`
+- **Função `elemento_na_lista(lista, elemento)`**: Verifica se um elemento está presente na lista, através de uma iteração explícita.
 
-### exercicio5.py
+### `exercicio6.py`
+- **Função `fatorial(n)`**: Calcula o fatorial de `n` recursivamente, tratando de casos especiais e exceções.
 
-- **Função**: `elemento_na_lista(lista, elemento)`
-  - **Objetivo**: Verificar a presença de um elemento em uma lista.
-  - **Exemplo de Uso**:
-    ```python
-    elemento_na_lista([1, 2, 3], 3) # Saída: True
-    ```
+## Exemplos de Uso
 
-### exercicio6.py
+### Uso de `exercicio2.py`
+```python
+result = maior_numero([10, 20, 30, 25])
+print(result)  # Saída: (2, 30)
+```
 
-- **Função**: `fatorial(n)`
-  - **Objetivo**: Calcular o fatorial de um número inteiro não-negativo.
-  - **Exemplo de Uso**:
-    ```python
-    fatorial(5) # Saída: 120
-    ```
+## Boas Práticas e Dicas para Contribuir
 
-## Contribuindo
+- **Estilo de Código**: Siga o guia de estilo PEP8 para Python.
+- **Testes**: Garanta que há testes cobrindo novas funcionalidades ou corrigindo bugs.
+- **Documentação**: Documente funções e métodos claramente.
+- **Pull Requests**: Envie PRs pequenos e focados, um para cada funcionalidade ou correção.
 
-Contribuições são sempre bem-vindas! Aqui estão algumas formas em que você pode contribuir:
-- Criando issues para reportar bugs ou sugerir melhorias.
-- Implementando novas funcionalidades ou melhorando a eficiência das existentes.
-- Melhorando a documentação ou comentários no código para torná-lo mais compreensível.
-- Adicionando testes para garantir a estabilidade do código ao longo das mudanças.
+## Como Contribuir
 
-### Boas Práticas
+1. Clone o repositório.
+2. Crie uma branch para sua funcionalidade ou correção de bugs.
+3. Faça suas alterações.
+4. Execute os testes.
+5. Envie um pull request.
 
-- Siga as convenções de estilo de código PEP8.
-- Inclua comentários claros e concisos.
-- Escreva testes para verificar as funcionalidades antes de enviar um pull request.
-- Leia sempre o que está em aberto em issues e pull requests para evitar trabalho duplicado.
-- Mantenha um ambiente cordial e respeite todas as contribuições.
-
-## Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+**Obrigado por contribuir!**
+```
