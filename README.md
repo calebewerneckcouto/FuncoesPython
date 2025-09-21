@@ -1,64 +1,76 @@
-# README.md
+```markdown
+# Projeto de Funções em Python
 
-## Overview
-Este repositório contém uma coleção de exercícios em Python destinados à prática de habilidades de programação, focando em operações com listas, recursividade, condições e loops. Cada arquivo de script Python encapsula uma funcionalidade específica detalhada abaixo.
+Este repositório contém uma coleção de scripts Python cada um demonstrando diferentes algoritmos e funções para operações variadas como cálculo de maior número em uma lista, operações matemáticas como fatorial, verificações de maioridade e presença de elemento em lista, e verificação de número primo.
 
 ## Estrutura do Projeto
-O repositório está organizado da seguinte forma:
+
+O projeto está organizado da seguinte forma:
 
 ```
-/projeto
-    /exercicio2.py     # Encontrar o maior número em uma lista e seu índice
-    /exercicio3.py     # Avaliar se uma pessoa (nome, idade) é maior de idade
-    /exercicio4.py     # Tratar diferentes estruturas para verificar maioridade
-    /exercicio5.py     # Determinar se um elemento está presente em uma lista
-    /exercicio6.py     # Calcular o fatorial de um número
-    /exercicio.py      # Verificar se um número é primo
+/
+|-- exercicio.py          # Verificação se um número é primo 
+|-- exercicio2.py         # Encontrar o maior número em uma lista 
+|-- exercicio3.py         # Verificar maioridade com base na idade 
+|-- exercicio4.py         # Verifica maioridade para diferentes tipos de entrada 
+|-- exercicio5.py         # Verificar presença de um elemento na lista 
+|-- exercicio6.py         # Calcular fatorial de um número
 ```
 
-## Linguagens de Programação Utilizadas
-- Python 3.x
+## Linguagem de Programação
 
-## Dependências e Instruções de Instalação
-Não há dependências externas requeridas para executar estes scripts, pois eles usam apenas a biblioteca padrão de Python. Para executar qualquer um dos scripts, é necessário ter Python 3.x instalado localmente.
+Este projeto utiliza:
+- Python 3
 
-Para instalar Python, você pode baixar o instalador apropriado para seu sistema operacional em [python.org](https://www.python.org/downloads/).
+## Dependências e Instalação
 
-## Como Rodar o Projeto e Executar Testes 
-Para executar qualquer script, utilize o seguinte comando no terminal (substitua `<nome_do_script>.py` pelo nome do arquivo que deseja executar):
+Não há dependências externas necessárias para executar estes scripts além de uma versão adequada do Python (Python 3.x). Para instalar Python, visite [python.org](https://www.python.org/downloads/) e siga as instruções para o seu sistema operacional.
+
+## Executando os Scripts e Testes
+
+Para executar qualquer script, abra o terminal e digite, por exemplo:
 
 ```bash
-python <nome_do_script>.py
+python exercicio2.py
 ```
 
-Para rodar um teste específico dentro do arquivo, certifique-se de invocar a função de teste nesse arquivo ou adicionar um bloco de teste ao final do arquivo. Por exemplo:
+## Detalhes dos Arquivos de Código
 
-```python
-if __name__ == "__main__":
-    print(maior_numero([10, 20, 30, 25]))
-```
-
-## Descrição dos Scripts
-- **exercicio2.py**: Contém a função `maior_numero`, que identifica o maior número em uma lista de números inteiros, retornando a posição e o número.
-- **exercicio3.py** e **exercicio4.py**: Ambos lidam com a avaliação da maioridade de uma pessoa, mas `exercicio4.py` acrescenta suporte para entrada de dados tanto em formato de tupla quanto de dicionário.
-- **exercicio5.py**: Implementa a função `elemento_na_lista`, que verifica se um elemento está contido em uma lista fornecida.
-- **exercicio6.py**: Contém a função `fatorial`, que calcula o fatorial de um número inteiro não-negativo de maneira recursiva.
-- **exercicio.py**: Fornece a função `primo`, que determina se um número é primo.
+- **`exercicio.py`**:
+  - Função `primo(n)`: Verifica se um número inteiro `n` é primo. 
+- **`exercicio2.py`**:
+  - Função `maior_numero(lista)`: Identifica e retorna o maior número em uma lista e sua posição.
+- **`exercicio3.py`**:
+  - Função `maior_idade(pessoa)`: Verifica e informa se uma pessoa (tupla com nome e idade) é maior de 18 anos.
+- **`exercicio4.py`**:
+  - Função `maior_idade(pessoa)`: Verifica e informa, adaptada para tuplas ou dicionários, se uma pessoa é maior de 18 anos.
+- **`exercicio5.py`**:
+  - Função `elemento_na_lista(lista, elemento)`: Verifica se um elemento está presente em uma lista.
+- **`exercicio6.py`**:
+  - Função `fatorial(n)`: Calcula o fatorial de um número `n`, com tratamento para valores negativos.
 
 ## Exemplos de Uso
 
-```python
-# exemplo de uso para o exercicio2.py
-print(maior_numero([10, 20, 30, 25]))  # Saída: (2, 30)
+Consulte a seção "Exemplos de Uso" em cada descrição de script para visualizar como executar e testar cada função.
 
-# exemplo de uso para o exercicio5.py
-print(elemento_na_lista([1, 2, 3, 4], 3))  # Saída: True
+## Contribuindo para o Projeto
+
+Para contribuir com melhorias ou correções, siga estes passos:
+1. Faça um `fork` do projeto.
+2. Crie uma `branch` para sua funcionalidade (`git checkout -b feature/awesomeFeature`).
+3. Faça suas alterações.
+4. Commit suas mudanças (`git commit -am 'Add some awesomeFeature'`).
+5. Realize um `push` para a `branch` criada (`git push origin feature/awesomeFeature`).
+6. Abra um `Pull Request`.
+
+## Boas Práticas
+
+- Siga as convenções de nomenclatura e estilo do Python (PEP8).
+- Escreva testes unitários para novas funcionalidades.
+- Documente as funções adequadamente.
+- Certifique-se de que seu código é limpo e bem comentado para manter a legibilidade.
 ```
 
-## Como Contribuir
-- Estude os scripts existentes e entenda suas funcionalidades.
-- Mantenha a simplicidade e siga as convenções de código Python PEP 8.
-- Escreva comentários claros e funções bem documentadas.
-- Para contribuir com código, considere fazer um fork do repositório, realizar suas mudanças e submeter um Pull Request.
+### Observação
 
-Agradecemos sua contribuição para tornar este projeto ainda melhor!
+Esse README foi construído de forma genérica com base na disposição, estrutura e funcionalidades dos scripts fornecidos. Certifique-se de adaptar qualquer parte conforme necessário para refletir mais precisamente os detalhes e nuances do seu projeto específico.
