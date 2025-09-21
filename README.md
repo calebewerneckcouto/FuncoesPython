@@ -1,107 +1,111 @@
-```markdown
-# Projeto de Exerc??cios em Python
+# README.md
 
-Este reposit??rio cont??m uma cole????o de exerc??cios implementados em Python que demonstram diferentes t??cnicas de programa????o, como busca de maior n??mero em uma lista, c??lculo de fatorial, verifica????o de maioridade e determina????o da primalidade de um n??mero.
+## Visão Geral do Projeto
 
-## Estrutura do Projeto
+Este repositório contém uma coleção de scripts Python projetados para demonstrar manipulações básicas de dados e lógicas de programação, incluindo busca de maior número em uma lista, cálculo de fatorial, verificação de maioridade, identificação de números primos e verificação de presença de elementos em uma lista.
+
+### Estrutura de Diretórios
 
 ```
-.
-????????? exercicio.py          # Verifica se um n??mero ?? primo
-????????? exercicio2.py         # Identifica o maior n??mero em uma lista e sua posi????o
-????????? exercicio3.py         # Verifica maioridade dado o nome e idade (tupla)
-????????? exercicio4.py         # Verifica maioridade com entrada flex??vel (tupla ou dicion??rio)
-????????? exercicio5.py         # Verifica a presen??a de um elemento em uma lista
-????????? exercicio6.py         # Calcula o fatorial de um n??mero inteiro n??o-negativo
+/
+|- exercicio.py
+|- exercicio2.py
+|- exercicio3.py
+|- exercicio4.py
+|- exercicio5.py
+|- exercicio6.py
 ```
 
-## Tecnologias Utilizadas
+### Linguagens Utilizadas
 
-- Python 3.8+
+- **Python**: Versão 3.8 ou superior.
 
-## Depend??ncias
+### Dependências
 
-Este projeto n??o requer depend??ncias externas.
+Este projeto não possui dependências externas.
 
-## Instala????o
+## Instruções de Instalação
 
-Clone o reposit??rio usando:
+1. Clone o repositório:
+   ```bash
+   git clone URL_DO_REPOSITORIO
+   ```
+2. Certifique-se de que o Python 3.8+ está instalado na sua máquina.
+
+## Executando os Scripts e Testes
+
+Cada script pode ser executado diretamente via linha de comando. Por exemplo, para executar o `exercicio2.py`, simplesmente use:
 
 ```bash
-git clone https://github.com/seuusuario/seuprojeto.git
+python exercicio2.py
 ```
 
-## Executando o Projeto
+Para executar os exemplos de uso inclusos em cada script ou qualquer teste escrito, você pode iniciar diretamente o script escolhido, visto que os exemplos de uso estão geralmente no final dos scripts como chamadas às funções implementadas.
 
-Cada arquivo pode ser executado individualmente com o comando Python:
+## Detalhes dos Scripts
 
-```bash
-python3 nome_do_arquivo.py
-```
+### exercicio.py
 
-## Testes
+- **Função**: `primo(n)`
+  - **Objetivo**: Verificar se um número inteiro positivo é primo.
+  - **Exemplo de Uso**:
+    ```python
+    primo(7) # Saída: "É primo"
+    ```
 
-Cada script possui exemplos de uso que tamb??m servem como testes b??sicos para verificar a funcionalidade. Execute o script correspondente para ver os resultados.
+### exercicio2.py
 
-## Detalhes dos Arquivos e Fun????es
+- **Função**: `maior_numero(lista)`
+  - **Objetivo**: Encontrar o maior número numa lista de inteiros e retornar sua posição e valor.
+  - **Exemplo de Uso**:
+    ```python
+    maior_numero([10, 20, 30, 25]) # Saída: (2, 30)
+    ```
 
-1. **exercicio.py**: Cont??m a fun????o `primo(n)` que verifica se um n??mero `n` ?? primo.
-   - Entrada: Inteiro positivo
-   - Sa??da: Mensagem informando se o n??mero ?? primo.
-2. **exercicio2.py**: Inclui a fun????o `maior_numero(lista)` que determina o maior n??mero em uma lista.
-   - Entrada: Lista de inteiros
-   - Sa??da: Tupla com posi????o e valor do maior n??mero.
-3. **exercicio3.py**: Implementa a fun????o `maior_idade(pessoa)` que verifica se uma pessoa (representada por uma tupla) ?? maior de idade.
-   - Entrada: Tupla com nome e idade
-   - Sa??da: Mensagem sobre a maioridade.
-4. **exercicio4.py**: Similar ao `exercicio3.py` mas aceita tanto tupla quanto dicion??rio.
-   - Entradas: Tupla ou dicion??rio com nome e idade
-   - Sa??da: Mensagem sobre a maioridade dependendo do tipo de entrada.
-5. **exercicio5.py**: Desenvolve a fun????o `elemento_na_lista(lista, elemento)` que verifica se um elemento est?? presente em uma lista.
-   - Entrada: Lista e um elemento para buscar
-   - Sa??da: Booleano indicando presen??a do elemento.
-6. **exercicio6.py**: Cont??m a fun????o `fatorial(n)` que calcula o fatorial de um n??mero inteiro n??o-negativo.
-   - Entrada: Inteiro n??o-negativo
-   - Sa??da: Valor do fatorial.
+### exercicio3.py e exercicio4.py
 
-## Exemplos de Uso
+- **Função**: `maior_idade(pessoa)`
+  - **Objetivo**: Verificar se uma pessoa é maior de idade (18 anos ou mais) baseado em uma entrada de tupla ou dicionário.
+  - **Exemplo de Uso**:
+    ```python
+    maior_idade(("Calebe", 36)) # Saída: "Calebe é maior de idade."
+    maior_idade({"nome": "Julia", "idade": 15}) # Saída: "Julia não é maior de idade."
+    ```
 
-Veja abaixo como voc?? pode usar cada fun????o ap??s a execu????o do script correspondente:
+### exercicio5.py
 
-```python
-# Verifica????o se n??mero ?? primo
-primo(11)
+- **Função**: `elemento_na_lista(lista, elemento)`
+  - **Objetivo**: Verificar a presença de um elemento em uma lista.
+  - **Exemplo de Uso**:
+    ```python
+    elemento_na_lista([1, 2, 3], 3) # Saída: True
+    ```
 
-# Encontrar maior n??mero em uma lista
-maior_numero([1, 3, 2])
+### exercicio6.py
 
-# Verificar maioridade
-maior_idade(("Jo??o", 19))
-
-# Verificar maioridade com entrada flex??vel
-maior_idade({"nome": "Ana", "idade": 17})
-
-# Verificar presen??a de elemento na lista
-elemento_na_lista([1, 2, 3], 2)
-
-# Calcular fatorial
-fatorial(5)
-```
+- **Função**: `fatorial(n)`
+  - **Objetivo**: Calcular o fatorial de um número inteiro não-negativo.
+  - **Exemplo de Uso**:
+    ```python
+    fatorial(5) # Saída: 120
+    ```
 
 ## Contribuindo
 
-Para contribuir com este projeto, considere as seguintes boas pr??ticas:
+Contribuições são sempre bem-vindas! Aqui estão algumas formas em que você pode contribuir:
+- Criando issues para reportar bugs ou sugerir melhorias.
+- Implementando novas funcionalidades ou melhorando a eficiência das existentes.
+- Melhorando a documentação ou comentários no código para torná-lo mais compreensível.
+- Adicionando testes para garantir a estabilidade do código ao longo das mudanças.
 
-1. **Estilo de C??digo**: Siga o guia de estilo PEP 8 para Python.
-2. **Documenta????o**: Comente o seu c??digo adequadamente e atualize este README.md se necess??rio.
-3. **Testes**: Adicione exemplos ou testes para novas funcionalidades.
-4. **Revis??o**: Fa??a pull requests para revis??o de c??digo e teste antes de incorporar novas mudan??as.
+### Boas Práticas
 
-### Dicas para contribuir
+- Siga as convenções de estilo de código PEP8.
+- Inclua comentários claros e concisos.
+- Escreva testes para verificar as funcionalidades antes de enviar um pull request.
+- Leia sempre o que está em aberto em issues e pull requests para evitar trabalho duplicado.
+- Mantenha um ambiente cordial e respeite todas as contribuições.
 
-- Explore os scripts existentes para entender as funcionalidades presentes.
-- Verifique issues abertos para encontrar ??reas que requerem melhorias ou novas funcionalidades.
+## Licença
 
-```
-
-Este README fornece uma vis??o geral do projeto, facilitando a compreens??o e contribui????o para o mesmo por parte de outros desenvolvedores.
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
