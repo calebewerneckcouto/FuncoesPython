@@ -1,65 +1,75 @@
-# README.md
+# README.md for Python Examples Repository
 
-## Projeto de Funções em Python
+## Descrição do Projeto
 
-Este repositório contém uma série de exercícios de Python implementando diferentes funcionalidades, desde a determinação se um número é primo até a identificação da maioridade de uma pessoa. Cada script é independente e implementa uma função específica juntamente com alguns testes para mostrar sua execução e resultados esperados.
+Este repositório contém uma coleção de programas Python simples, cada um ilustrando um conceito específico ou técnica de programação. Estes exemplos são ideais para novos programadores que estão aprendendo os básicos de Python ou programadores mais experientes que precisam relembrar certos conceitos.
 
-### Estrutura do Projeto
+## Estrutura do Projeto
 
-O repositório é organizado da seguinte forma:
+O projeto inclui os seguintes arquivos Python distribuídos na raiz do repositório:
 
-- **exercicio.py**: Verifica se um número inteiro é primo.
-- **exercicio2.py**: Encontra o maior número em uma lista e sua posição.
-- **exercicio3.py**: Determina se uma pessoa (dada por nome e idade) é maior de idade.
-- **exercicio4.py**: Similar ao `exercicio3.py`, mas adapta para entrada de dados como tuplas ou dicionários.
-- **exercicio5.py**: Verifica a presença de um elemento em uma lista.
-- **exercicio6.py**: Calcula o fatorial de um número.
+- `exercicio.py`: Programa que determina se um dado número inteiro é primo.
+- `exercicio2.py`: Programa que identifica o maior número em uma lista e retorna a sua posição.
+- `exercicio3.py`: Programa que verifica se uma pessoa é maior de idade a partir de uma tupla com nome e idade.
+- `exercicio4.py`: Programa similar ao `exercicio3.py`, com suporte adicional para entrada como dicionário.
+- `exercicio5.py`: Programa que verifica se um elemento específico está presente em uma lista sem usar o operador `in`.
+- `exercicio6.py`: Programa que calcula o fatorial de um número usando recursão.
 
-### Linguagens de Programação Utilizadas
+## Linguagens de Programação
 
-- **Python 3.8+** é a linguagem usada em todo o projeto.
+- Python 3.x
 
-### Dependências e Instruções de Instalação
+## Dependências
 
-Não há dependências externas necessárias para rodar os scripts deste repositório, uma vez que todos usam a biblioteca padrão de Python. Para executá-los, você só precisa ter o Python instalado em seu ambiente. Você pode baixar e instalar o Python [aqui](https://www.python.org/downloads/).
+Este projeto não requer nenhuma biblioteca externa além do Python 3.x que deve estar instalado no seu sistema.
 
-### Como Rodar o Projeto e Executar Testes
+### Instalação do Python
 
-Para executar qualquer script, navegue até o diretório do projeto em seu terminal e execute:
+- **Windows/Mac/Linux**: Visite [python.org](https://www.python.org/downloads/) para baixar e instalar o interpretador Python apropriado para seu sistema operacional.
 
-```sh
-python3 <nome_do_arquivo.py>
+## Como Utilizar
+
+Cada script pode ser executado de forma independente. Abaixo estão as instruções para executar os programas em um terminal.
+
+```bash
+python exercicio.py    # Para verificar se um número é primo
+python exercicio2.py   # Para identificar o maior número em uma lista
+python exercicio3.py   # Para verificar maioridade com base em uma tupla
+python exercicio4.py   # Para verificar maioridade com suporte a tupla ou dicionário
+python exercicio5.py   # Para verificar a presença de um elemento em uma lista
+python exercicio6.py   # Para calcular o fatorial de um número
 ```
 
-Substitua `<nome_do_arquivo.py>` pelo nome do script que deseja rodar. Cada arquivo já contém exemplos de teste no seu bloco main que ilustram como as funções devem ser usadas e os resultados esperados.
+## Execução de Testes
 
-### Descrição Detalhada dos Arquivos de Código
+Cada arquivo inclui exemplos internos ou um bloco específico para testar a funcionalidade implementada. Esses exemplos são tipicamente localizados ao final de cada arquivo.
 
-Aqui segue uma breve descrição de cada arquivo junto com suas funções e responsabilidades principais:
+## Contribuindo
 
-1. **exercicio.py**: Implementa a função `primo(n)` que verifica se 'n' é um número primo.
-    - **Testes**: Permite ao usuário inserir um número para verificar sua primalidade.
-    
-2. **exercicio2.py**: Contém a função `maior_numero(lista)` para encontrar o maior número em uma lista e sua posição.
-    - **Exemplos de Uso**: Vários casos de testes são fornecidos para listas com valores distintos e também para uma lista vazia.
+Se você deseja contribuir para este projeto, por favor siga as seguintes boas práticas:
 
-3. **exercicio3.py** e **exercicio4.py**: Ambos tratam de verificar se uma pessoa é maior de idade, mas o `exercicio4.py` aceita entrada como tupla ou dicionário.
-    - **Flexibilidade**: `exercicio4.py` demonstra uma maior adaptabilidade em relação ao formato dos dados de entrada.
-    
-4. **exercicio5.py**: Define a função `elemento_na_lista(lista, elemento)` para pesquisar manualmente (sem usar o operador `in`) se um elemento está presente na lista.
+- **Use Pull Requests**: Faça alterações em uma branch separada e solicite merges via pull requests.
+- **Padronização de Código**: Siga o guia de estilo [PEP 8](https://pep8.org/).
+- **Documentação**: Comente seu código adequadamente e atualize este README.md se necessário.
+- **Testes**: Certifique-se de incluir testes para novas funcionalidades e executá-los antes de solicitar a inclusão ao projeto principal.
 
-5. **exercicio6.py**: Calcula o fatorial de um número inteiro com a função `fatorial(n)`, com tratamentos de erros básicos.
-    - **Recursividade**: Demonstra o uso de chamadas recursivas para resolver um problema matemático.
+## Exemplos de Uso
 
-### Exemplos de Uso
+1. **Determinar se um número é primo**
+   ```python
+   primo(17)  # Deve imprimir "É primo"
+   primo(4)   # Deve imprimir "Não é primo"
+   ```
 
-Por favor, consulte a seção "Como Rodar o Projeto e Executar Testes" para ver como você pode executar cada script e ver demonstrações de seu funcionamento.
+2. **Identificar o maior número em uma lista**
+   ```python
+   maior_numero([1, 3, 5, 7, 9])  # Retorna (4, 9)
+   ```
 
-### Boas Práticas e Dicas para Contribuir
+3. **Verificar a maioridade de uma pessoa**
+   ```python
+   maior_idade(("Gabriel", 21))  # Imprime "Gabriel é maior de idade."
+   maior_idade({"nome": "Ana", "idade": 16})  # Imprime "Ana não é maior de idade."
+   ```
 
-- **Estilo de Código**: Siga a [PEP 8](https://pep8.org/), a guia de estilo para Python.
-- **Documentação**: Comente seu código adequadamente e atualize este README se adicionando novas funcionalidades.
-- **Testes**: Adicione exemplos de testes quando contribuir com novas funções.
-- **Pull Requests**: Use pull requests para revisão de código antes de mergear novas funcionalidades na branch principal.
-
-Para contribuir, faça um fork do repositório, crie uma nova branch para suas funcionalidades ou correções, faça commits de suas mudanças, e então crie um pull request para revisão.
+Esperamos que este repositório seja útil para a sua aprendizagem ou revisão de conceitos de programação em Python. Boa programação!
