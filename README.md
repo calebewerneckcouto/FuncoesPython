@@ -3,7 +3,7 @@
 
 # 🎬 Sistema de Geração de Vídeos com IA
 
-[![Demonstração do Sistema](https://img.youtube.com/vi/ABCD123456/0.jpg)]([https://www.youtube.com/watch?v=ABCD123456](https://www.youtube.com/watch?v=20E3Wfdfbzk&list=RD20E3Wfdfbzk&start_radio=1))
+https://www.youtube.com/watch?v=20E3Wfdfbzk&list=RD20E3Wfdfbzk&start_radio=1
 
 *Clique na imagem acima para ver a demonstração completa do sistema*
 
