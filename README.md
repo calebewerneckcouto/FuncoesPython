@@ -190,7 +190,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ### Contato
 
-Para dúvidas e sugestões, entre em contato através de [seuemail@example.com](mailto:seuemail@example.com).
+Para dúvidas e sugestões, entre em contato através de calebewerneck@hotmail.com
 
 ---
 
